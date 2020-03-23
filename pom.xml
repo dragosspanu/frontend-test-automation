@@ -77,9 +77,9 @@
 <!--                    <systemPropertyVariables>-->
 <!--                        <webdriver.base.url>http://localhost:4445/wd/hub</webdriver.base.url>-->
 <!--                    </systemPropertyVariables>-->
-                    <parallel>classes</parallel>
-                    <threadCount>3</threadCount>
-                    <forkCount>3</forkCount>
+<!--                    <parallel>classes</parallel>-->
+<!--                    <threadCount>3</threadCount>-->
+<!--                    <forkCount>3</forkCount>-->
                 </configuration>
                 <executions>
                     <execution>

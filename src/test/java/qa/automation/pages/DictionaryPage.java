@@ -2,7 +2,6 @@ package qa.automation.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import net.serenitybdd.core.pages.WebElementFacade;
 import java.util.stream.Collectors;
 
@@ -21,11 +20,11 @@ public class DictionaryPage extends PageObject {
     @FindBy(name="go")
     private WebElementFacade lookupButton;
 
-    public void enter_keywords(String keyword) {
+    public void enterKeywords(String keyword) {
         searchTerms.type(keyword);
     }
 
-    public void lookup_terms() {
+    public void lookupTerms() {
         lookupButton.click();
     }
 

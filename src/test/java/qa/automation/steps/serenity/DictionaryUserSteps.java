@@ -13,27 +13,27 @@ public class DictionaryUserSteps {
 
     @Step
     public void enters(String keyword) {
-        dictionaryPage.enter_keywords(keyword);
+        dictionaryPage.enterKeywords(keyword);
     }
 
     @Step
-    public void starts_search() {
-        dictionaryPage.lookup_terms();
+    public void startsSearch() {
+        dictionaryPage.lookupTerms();
     }
 
     @Step
-    public void should_see_definition(String definition) {
+    public void definitionIsDisplayed(String definition) {
         assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
     }
 
     @Step
-    public void is_the_home_page() {
+    public void isOnTheHomePage() {
         dictionaryPage.open();
     }
 
     @Step
-    public void looks_for(String term) {
+    public void looksFor(String term) {
         enters(term);
-        starts_search();
+        startsSearch();
     }
 }

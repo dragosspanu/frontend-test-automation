@@ -9,20 +9,20 @@ import qa.automation.steps.serenity.DictionaryUserSteps;
 public class DictionarySteps {
 
     @Steps
-    DictionaryUserSteps anna;
+    DictionaryUserSteps dictionaryUserSteps;
 
     @Given("^the user is on the Wiktionary home page$")
     public void givenTheUserIsOnTheWikionaryHomePage() {
-        anna.is_the_home_page();
+        dictionaryUserSteps.isOnTheHomePage();
     }
 
     @When("^the user looks up the definition of the \"([^\"]*)\"$")
     public void whenTheUserLooksUpTheDefinitionOf(String word) {
-        anna.looks_for(word);
+        dictionaryUserSteps.looksFor(word);
     }
 
-    @Then("^he should see the \"([^\"]*)\"$")
-    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
-        anna.should_see_definition(definition);
+    @Then("^the \"([^\"]*)\" definition is displayed$")
+    public void thenTheDefinitionIsDisplayed(String definition) {
+        dictionaryUserSteps.definitionIsDisplayed(definition);
     }
 }

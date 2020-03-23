@@ -6,7 +6,7 @@ Feature: Lookup a definition
   Scenario Outline: Looking up the definition of a word
     Given the user is on the Wiktionary home page
     When the user looks up the definition of the "<word>"
-    Then he should see the "<definition>"
+    Then the "<definition>" definition is displayed
 
     Examples:
       | word   | definition                                                                                         |
