@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Frontend-test-automation" />
-        <module name="frontend-test-automation" />
-        <module name="serenity-cucumber-framework" />
         <module name="test-automation" />
+        <module name="serenity-cucumber-framework" />
+        <module name="frontend-test-automation" />
       </profile>
     </annotationProcessing>
   </component>

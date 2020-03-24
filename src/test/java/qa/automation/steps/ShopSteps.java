@@ -31,11 +31,6 @@ public class ShopSteps {
         shopUserSteps.insertOrderReference(orderReference);
     }
 
-    @When("^he attaches the corresponding file \"([^\"]*)\"$")
-    public void whenTheUserAttachesFile(String location) {
-        shopUserSteps.attachFile(location);
-    }
-
     @When("^he inserts his text message \"([^\"]*)\"$")
     public void whenTheUserInsertsTextMessage(String location) {
         shopUserSteps.insertTextMessage(location);

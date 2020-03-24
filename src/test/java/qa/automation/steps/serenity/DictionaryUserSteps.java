@@ -12,13 +12,14 @@ public class DictionaryUserSteps {
     DictionaryPage dictionaryPage;
 
     @Step
-    public void enters(String keyword) {
-        dictionaryPage.enterKeywords(keyword);
+    public void isOnTheHomePage() {
+        dictionaryPage.open();
     }
 
     @Step
-    public void startsSearch() {
-        dictionaryPage.lookupTerms();
+    public void looksFor(String keyword) {
+        dictionaryPage.searchTerms.type(keyword);
+        dictionaryPage.lookupButton.click();
     }
 
     @Step
@@ -26,14 +27,4 @@ public class DictionaryUserSteps {
         assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
     }
 
-    @Step
-    public void isOnTheHomePage() {
-        dictionaryPage.open();
-    }
-
-    @Step
-    public void looksFor(String term) {
-        enters(term);
-        startsSearch();
-    }
 }
