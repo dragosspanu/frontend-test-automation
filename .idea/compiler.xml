@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Frontend-test-automation" />
-        <module name="test-automation" />
-        <module name="serenity-cucumber-framework" />
         <module name="frontend-test-automation" />
+        <module name="serenity-cucumber-framework" />
+        <module name="test-automation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="13" />
   </component>
 </project>
