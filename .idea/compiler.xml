@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Frontend-test-automation" />
         <module name="frontend-test-automation" />
+        <module name="Frontend-test-automation" />
         <module name="serenity-cucumber-framework" />
         <module name="test-automation" />
       </profile>
